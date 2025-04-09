@@ -24,82 +24,12 @@
           <h5>{{ card.title }}</h5>
           <p>{{ card.description }}</p>
           <a href="{{ card.link }}" class="btn btn-primary" target="_blank">Ir</a>
+          {% if not card.available %}
+            <p class="text-muted">Próximamente</p>
+          {% endif %}
         </div>
       </div>
     {% endfor %}
-
-    <!-- Nueva tarjeta "Creador de Ligas Deportivas" -->
-    <div class="col-md-4">
-      <div class="card tile h-100 text-center border-0 shadow-sm">
-        <div class="tile-icon"><i class="fas fa-sportsball"></i></div>
-        <h5>Creador de Ligas Deportivas</h5>
-        <p>Herramienta para crear y gestionar ligas deportivas escolares.</p>
-        <a href="link_a_creador_ligas" class="btn btn-primary" target="_blank">Ir</a>
-        <p class="text-muted">Próximamente</p>
-      </div>
-    </div>
-
-    <!-- Nueva tarjeta "Recursos Educativos" -->
-    <div class="col-md-4">
-      <div class="card tile h-100 text-center border-0 shadow-sm">
-        <div class="tile-icon"><i class="fas fa-book"></i></div>
-        <h5>Recursos Educativos</h5>
-        <p>Accede a material y recursos útiles para tus clases.</p>
-        <a href="link_a_recursos" class="btn btn-primary" target="_blank">Ir</a>
-        <p class="text-muted">Próximamente</p>
-      </div>
-    </div>
-
-    <!-- Tarjetas para los "mundos" -->
-    <div class="col-md-4">
-      <div class="card tile h-100 text-center border-0 shadow-sm">
-        <div class="tile-icon"><i class="fas fa-brain"></i></div>
-        <h5>Mundo Emocional</h5>
-        <p>Explora el desarrollo emocional en el proceso educativo.</p>
-        <a href="link_a_mundo_emocional" class="btn btn-primary" target="_blank">Ir</a>
-        <p class="text-muted">Próximamente</p>
-      </div>
-    </div>
-  
-    <div class="col-md-4">
-      <div class="card tile h-100 text-center border-0 shadow-sm">
-        <div class="tile-icon"><i class="fas fa-users"></i></div>
-        <h5>Mundo Social</h5>
-        <p>Fomenta la interacción social y la colaboración en el aprendizaje.</p>
-        <a href="link_a_mundo_social" class="btn btn-primary" target="_blank">Ir</a>
-        <p class="text-muted">Próximamente</p>
-      </div>
-    </div>
-  
-    <div class="col-md-4">
-      <div class="card tile h-100 text-center border-0 shadow-sm">
-        <div class="tile-icon"><i class="fas fa-dumbbell"></i></div>
-        <h5>Mundo Físico</h5>
-        <p>Promueve la actividad física y el bienestar en la educación.</p>
-        <a href="link_a_mundo_fisico" class="btn btn-primary" target="_blank">Ir</a>
-        <p class="text-muted">Próximamente</p>
-      </div>
-    </div>
-  
-    <div class="col-md-4">
-      <div class="card tile h-100 text-center border-0 shadow-sm">
-        <div class="tile-icon"><i class="fas fa-heart"></i></div>
-        <h5>Mundo Interior</h5>
-        <p>Fomenta la introspección y el autoconocimiento.</p>
-        <a href="link_a_mundo_interior" class="btn btn-primary" target="_blank">Ir</a>
-        <p class="text-muted">Próximamente</p>
-      </div>
-    </div>
-  
-    <div class="col-md-4">
-      <div class="card tile h-100 text-center border-0 shadow-sm">
-        <div class="tile-icon"><i class="fas fa-head-side-brain"></i></div>
-        <h5>Mundo Mental</h5>
-        <p>Desarrolla la inteligencia cognitiva y las habilidades mentales.</p>
-        <a href="link_a_mundo_mental" class="btn btn-primary" target="_blank">Ir</a>
-        <p class="text-muted">Próximamente</p>
-      </div>
-    </div>      
   </div>
 </div>
 
