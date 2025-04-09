@@ -1,0 +1,60 @@
+.card {
+    border-radius: 1rem;
+    transition: transform 0.3s ease;
+}
+.card:hover {
+    transform: scale(1.05);
+    background-color: #f1f1f1;
+}
+.tile {
+    background: linear-gradient(145deg, #f4f4f4, #ffffff);
+    border-radius: 16px;
+    padding: 20px;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease;
+  }
+  
+  .tile:hover {
+    transform: translateY(-5px);
+  }
+  
+  .tile-icon {
+    font-size: 2rem;
+    color: #3a82f7;
+    margin-bottom: 10px;
+    transition: color 0.3s ease;
+  }
+  body {
+    background: #f8f9fa url("/static/img/logoLME_2.png") no-repeat center center;
+    background-size: 50%;
+    background-attachment: fixed;
+    opacity: 0.97;
+  }
+  .tile {
+    transition: all 0.3s ease;
+  }
+  
+  .tile:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 20px rgba(58, 130, 247, 0.4); /* efecto halo azul */
+  }
+  
+  .tile:hover .tile-icon {
+    color: #0056d2;
+    filter: drop-shadow(0 0 6px rgba(58, 130, 247, 0.5));
+  }
+  
+.logo-icon {
+  width: 48px;
+  height: 48px;
+  vertical-align: middle;
+  margin-right: 10px;
+  border-radius: 50%;
+}
+.alert-info {
+    background-color: #e7f1ff;
+    border-left: 5px solid #3a82f7;
+    font-size: 1.1rem;
+    padding: 1rem;
+    margin-top: 2rem;
+  }
